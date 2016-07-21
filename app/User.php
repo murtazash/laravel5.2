@@ -24,4 +24,11 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+		
+		/* For custom password field rather than using default field 'password' by Laravel */
+		public function getAuthPassword()
+		{
+    	return $this->attributes['password2'];//change the 'password2' with the name of your password field in the table
+		}
+			
 }
