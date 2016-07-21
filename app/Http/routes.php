@@ -21,3 +21,7 @@ Route::post('products/{products_description}/orders','orders_controller@create')
 Route::get('orders/{orders_product}/edit','orders_controller@edit');
 Route::patch('order/{orders_product}','orders_controller@update');
 
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
