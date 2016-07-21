@@ -18,6 +18,34 @@ $RECYCLE.BIN/
 *.lnk
 
 # =========================
+# Dependancy Directories
+# =========================
+
+/vendor
+/tests
+/storage
+/node_modules
+/database
+/config
+/bootstrap
+/resources/lang
+/app/Providers
+/app/Http/Middleware
+/app/Http/Controllers/Auth
+
+*.env
+*.env.example
+*.htaccess
+*.xml
+*.map
+*.ico
+*.txt
+*.md
+*.gitignore
+
+
+
+# =========================
 # Operating System Files
 # =========================
 
